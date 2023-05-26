@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
   res.send("Hello Semua, Ini Adalah Endpoint Default / Root");
 });
 
-// Endpoint untuk registrasi user baru
+// 1. Endpoint untuk registrasi user baru
 app.post("/register", async (req, res) => {
   try {
     const { name, email, password, role } = req.body;
@@ -69,7 +69,7 @@ app.post("/register", async (req, res) => {
   }
 });
 
-// Endpoint login untuk semua User
+// 2. Endpoint login untuk semua User
 app.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -125,7 +125,7 @@ app.post("/login", async (req, res) => {
   }
 });
 
-// Endpoint untuk melihat semua users, hanya bisa diakses oleh admin)
+// 3. Endpoint untuk melihat semua users, hanya bisa diakses oleh admin)
 app.get("/users", auth, async (req, res) => {
   try {
     if (req.user.role !== "admin") {
@@ -146,7 +146,7 @@ app.get("/users", auth, async (req, res) => {
   }
 });
 
-// Endpoint untuk menambahkan Todo
+// 4. Endpoint untuk menambahkan Todo
 app.post("/todos", auth, async (req, res) => {
   try {
     const { title, description } = req.body;
@@ -163,7 +163,7 @@ app.post("/todos", auth, async (req, res) => {
   }
 });
 
-// Endpoint untuk mendapatkan semua todo, yang hanya bisa di akses oleh admin
+// 5. Endpoint untuk mendapatkan semua todo, yang hanya bisa di akses oleh admin
 app.get("/todos", auth, async (req, res) => {
   try {
     if (req.user.role !== "admin") {
@@ -180,7 +180,7 @@ app.get("/todos", auth, async (req, res) => {
   }
 });
 
-// Mendapatkan Todo dengan id yang dapat diakses oleh user, tentunya hanya menampilkan todo yang dimiliki oleh user lewat id todo dan id user
+// 6. Mendapatkan Todo dengan id yang dapat diakses oleh user, tentunya hanya menampilkan todo yang dimiliki oleh user lewat id todo dan id user
 app.get("/todos/:id", auth, async (req, res) => {
   try {
     const { id } = req.params;
@@ -203,7 +203,7 @@ app.get("/todos/:id", auth, async (req, res) => {
   }
 });
 
-// Endpoint untuk update Todo yang dimiliki oleh user
+// 7. Endpoint untuk update Todo yang dimiliki oleh user
 app.put("/todos/:id", auth, async (req, res) => {
   try {
     const { id } = req.params;
@@ -230,7 +230,7 @@ app.put("/todos/:id", auth, async (req, res) => {
   }
 });
 
-// Endpoint Delete Todo yang dimiliki oleh user
+// 8. Endpoint Delete Todo yang dimiliki oleh user
 app.delete("/todos/:id", auth, async (req, res) => {
   try {
     const { id } = req.params;
@@ -256,7 +256,7 @@ app.delete("/todos/:id", auth, async (req, res) => {
   }
 });
 
-// Delete Semua Todo yang hanya dapat dilakukan oleh admin
+// 9. Delete Semua Todo yang hanya dapat dilakukan oleh admin
 app.delete("/todos", auth, async (req, res) => {
   try {
     if (req.user.role !== "admin") {

@@ -5,7 +5,7 @@
 
 - [Description](#Description)
 - [Feature](#Feature)
-- [Query](#Query-Database)
+- [Links](#Links)
 - [Contributing](#contributing)
 
 ### Description
@@ -13,27 +13,27 @@ Project Web Service dan RESTful API ini menggunakan express js dan MySQL sebagai
 
 ### Feature
  - **Enpoint Register**
-      User dapat melakukan Register untuk pembuatan Akun mereka dengan EndPoint _/register_.
+      - User dapat melakukan Register untuk pembuatan Akun mereka dengan EndPoint _/register_.
  - **Enpoint Login**
-      Baik User dan Admin dapat melakukan Login yang diperlukan untuk dapat mengakses Web Service dengan Endpoint _login_.
+      - Baik User dan Admin dapat melakukan Login yang diperlukan untuk dapat mengakses Web Service dengan Endpoint _login_.
  - **Enpoint Users**
-      Endpoint _/users_ ada buat agar admin dapat melihat user yang ada pada Web Service.
+      - Endpoint _/users_ ada buat agar admin dapat melihat user yang ada pada Web Service.
  - **Enpoint Melihat Semua Todo**
-      Dengan Menggunakan Method GET Endpoint _/todos_ dapat mengambil data semua todo. namun Endpoint ini hanya bisa diakses oleh admin.
+      - Dengan Menggunakan Method GET Endpoint _/todos_ dapat mengambil data semua todo. namun Endpoint ini hanya bisa diakses oleh admin.
 - **Enpoint Menambahkan Todo**
-      Endpoint _/todos_ dengan method POST dapat digunakan oleh user untuk menambahkan todo baru sesuai dengan id user.
+      - Endpoint _/todos_ dengan method POST dapat digunakan oleh user untuk menambahkan todo baru sesuai dengan id user.
 - **Enpoint Mendapatkan Todo Berdasarkan Id**
-      User dapat melihat todo mereka dengan Endpoint _/todos/:id_ dengan method GET.
+      - User dapat melihat todo mereka dengan Endpoint _/todos/:id_ dengan method GET.
 - **Enpoint Update Todo Dengan Id User**
-      Untuk update Todo sendiri menggunakan method PUT, Endpoint yang digunakan adalah _/todos/:id_
+      - Untuk update Todo sendiri menggunakan method PUT, Endpoint yang digunakan adalah _/todos/:id_
 - **Enpoint Delete Todo**
-      Delete Todo yang dapat dilakukan oleh user adalah Delete berdasarkan Todo yang mereka miliki, sehingga menggunakan Endpoint _/todos/:id_ dengan method DELETE
+      - Delete Todo yang dapat dilakukan oleh user adalah Delete berdasarkan Todo yang mereka miliki, sehingga menggunakan Endpoint _/todos/:id_ dengan method DELETE
 - **Enpoint Delete Semua Todo**
       Delete Semua Todo hanya dapat dilakukan oleh admin, Endpointnya sendiri adalah _/todos_ dengan menggunakan method DELETE
       
 ### Links
- [Railway Links]([https://pages.github.com/](https://todolists-production.up.railway.app/))
- [Screenshoots Links]([https://pages.github.com/]([https://todolists-production.up.railway.app/](https://drive.google.com/drive/folders/1EVcPSbmVXaffZl0wc-faOyJPIYytNXD1?usp=sharing)))
+ [Railway Links][https://pages.github.com/](https://todolists-production.up.railway.app/)
+ [Screenshoots Links][https://pages.github.com/]([https://todolists-production.up.railway.app/](https://drive.google.com/drive/folders/1EVcPSbmVXaffZl0wc-faOyJPIYytNXD1?usp=sharing)
 
 ### Contributing
  - dalam kontribusinya sendiri project ini saya buat sendiri untuk memenuhi tugas dalam T4I Skilvul. Menggunakan Javacript, Node JS, Railway, Postman, etc.

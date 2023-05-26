@@ -31,6 +31,11 @@ Todo.belongsTo(User, {
   foreignKey: "userId",
 });
 
+// Endpoint Awal
+app.get("/", (req, res) => {
+  res.send("Hello Semua, Ini Adalah Endpoint Default / Root");
+});
+
 // Endpoint untuk registrasi user baru
 app.post("/register", async (req, res) => {
   try {
@@ -64,7 +69,7 @@ app.post("/register", async (req, res) => {
   }
 });
 
-// Endpoint untuk semua User
+// Endpoint login untuk semua User
 app.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -113,6 +118,27 @@ app.post("/login", async (req, res) => {
         massage: "Welcome Admin",
       });
     }
+  } catch (error) {
+    res.status(500).json({
+      error: error.message,
+    });
+  }
+});
+
+// Endpoint untuk melihat semua users, hanya bisa diakses oleh admin)
+app.get("/users", auth, async (req, res) => {
+  try {
+    if (req.user.role !== "admin") {
+      return res.status(403).json({
+        message: "Access denied. Only admin users can view all users.",
+      });
+    }
+    const users = await User.findAll({
+      where: {
+        role: "user",
+      },
+    });
+    res.json(users);
   } catch (error) {
     res.status(500).json({
       error: error.message,

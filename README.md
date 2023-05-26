@@ -32,8 +32,8 @@ Project Web Service dan RESTful API ini menggunakan express js dan MySQL sebagai
       - Delete Semua Todo hanya dapat dilakukan oleh admin, Endpointnya sendiri adalah _/todos_ dengan menggunakan method DELETE
       
 ### Links
- - [Railway Links][https://pages.github.com/](https://todolists-production.up.railway.app/)
- - [Screenshoots Links][https://pages.github.com/]([https://todolists-production.up.railway.app/](https://drive.google.com/drive/folders/1EVcPSbmVXaffZl0wc-faOyJPIYytNXD1?usp=sharing)
+ - [Railway Links](https://todolists-production.up.railway.app/)
+ - [Screenshoots Links](https://drive.google.com/drive/folders/1EVcPSbmVXaffZl0wc-faOyJPIYytNXD1?usp=sharing)
 
 ### Contributing
  - dalam kontribusinya sendiri project ini saya buat sendiri untuk memenuhi tugas dalam T4I Skilvul. Menggunakan Javacript, Node JS, Railway, Postman, etc.

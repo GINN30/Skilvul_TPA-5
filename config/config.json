@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "todo_list",
-    "host": "127.0.0.1",
+    "username": "root_skilvul-5",
+    "password": "30$Januari00",
+    "database": "todo_skilvul5",
+    "host": "db4free.net",
     "dialect": "mysql"
   },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "todo_list",
-    "host": "127.0.0.1",
+  "test":{
+    "username": "root_skilvul-5",
+    "password": "30$Januari00",
+    "database": "todo_skilvul5",
+    "host": "db4free.net",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "todo_list",
-    "host": "127.0.0.1",
+    "username": "root_skilvul-5",
+    "password": "30$Januari00",
+    "database": "todo_skilvul5",
+    "host": "db4free.net",
     "dialect": "mysql"
   }
 }
